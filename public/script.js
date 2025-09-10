@@ -3,7 +3,7 @@ async function handleSubmit(e) {
   const email = document.getElementById('email').value;
   try {
     
-    const response = await fetch('http://localhost:3000/subscribe', {
+    const response = await fetch('/subscribe', {
       method: 'POST',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify({email: email})

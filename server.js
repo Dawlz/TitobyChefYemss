@@ -1,17 +1,18 @@
 import express from 'express';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import path from 'path';
 import fetch from 'node-fetch';
 dotenv.config();
 
 const app = express();
-const GAS_URL = process.env.GAS_URL
-const secretKey = process.env.Secret
+const GAS_URL = process.env.GAS_URL;
+const secretKey = process.env.Secret;
 const PORT = process.env.PORT || 3000;
-app.use(cors({origin: '*', methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH'], allowedHeaders: ['Content-Type', 'Authorization'], credentials: false}));
+// serve frontend from /public
+app.use(express.static(path.resolve(process.cwd(), 'public')));
+app.use(cors({ origin: '*', methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH'], allowedHeaders: ['Content-Type', 'Authorization'], credentials: false }));
 app.use(express.json());
-
-app.use(express.static('public'));
 
 app.post("/subscribe", async (req, res) => {
   
