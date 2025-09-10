@@ -1,5 +1,34 @@
 {
+  "name": "titobychefyemss",
+  "version": "1.0.0",
+  "description": "Titobychefyemss landing page",
+  "keywords": [
+    "Landing page",
+    "subscribe",
+    "shopify"
+  ],
+  "homepage": "https://github.com/Dawlz/TitobyChefYemss#readme",
+  "bugs": {
+    "url": "https://github.com/Dawlz/TitobyChefYemss/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dawlz/TitobyChefYemss.git"
+  },
+  "license": "ISC",
+  "author": "DevDawlz",
+  "type": "module",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
   "dependencies": {
-    "@shopify/shopify-api": "^11.14.1"
+    "@shopify/admin-api-client": "^1.1.1",
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "node-fetch": "^3.3.2"
   }
 }

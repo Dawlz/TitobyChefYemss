@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TITÓ - A tribute to Africa's rich flavors, crafted for today's world.</title>
-  <meta name="description" content="Titó - Celebrating Africa's flavors, crafting treats that spark memory, comfort, and a taste of home.">
-  <meta name="robots" content="index, follow">
-  <meta name="author" content="Chef Yemss">
-  <meta name="keywords" content="African cuisine, baked goods, comfort food, Tito by Chef Yemss, African flavors, traditional recipes, modern twists, culinary delights, home-style cooking, food culture, Chef Yemss, African treats, food memories, taste of home, TitobyChefYemss">
-  <link rel="preload" href="style.css" as = "style">
-  <link rel="preload" href="mobile.css" as = "style">
-  <link rel="preload" href="/assets/images/Tito_By_Chef_Yems_Logo.png" as="image" type="image/png">
-  <link rel="icon" type="image/png" href="/assets/images/Tito_By_Chef_Yems_Logo.png">
-  <script src="script.js"></script>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITÓ - A tribute to Africa's rich flavors, crafted for today's world.</title>
+    <meta name="description" content="Titó - Celebrating Africa's flavors, crafting treats that spark memory, comfort, and a taste of home.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Chef Yemss">
+    <meta name="keywords" content="African cuisine, baked goods, comfort food, Tito by Chef Yemss, African flavors, traditional recipes, modern twists, culinary delights, home-style cooking, food culture, Chef Yemss, African treats, food memories, taste of home, TitobyChefYemss">
+    <link rel="preload" href="style.css" as = "style">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/png" href="/assets/images/Tito_By_Chef_Yems_Logo.png">
+  <script src="script.js" async></script>
   <link rel="stylesheet" href="style.css">
 
 </head>
   <body>
     <div>
       <div class="tito-coming-soon" id="bodylogo"></div>
-      <h3>Coming Soon...</h3>
-      <form action="https://shopify.com/91339358541/account" method="post">
+      <h3 id="coming_soon">Coming Soon...</h3>
+      <p id="announcement">Tito by Chef Yems will be launching soon.</br>Be the first to know when our website goes live!</p>
+      <form id="notify-form" onsubmit= "handleSubmit(event)">
         <p id="message">Sign up to be notified</p>
-        <input type="email" name="email" id="email" placeholder="Enter your email" required>
-        <button type="submit" id="submit">Notify Me</button>
+        <div class="form-group">
+          <input type="email" name="email" id="email" placeholder="Enter your email" required>
+          <button type="submit" id="submit">Notify Me</button>
+        </div>
       </form>
     </div>
+
+    <footer>
+      <div class="social-media">
+        <p>Follow Us: </p>
+        <a href="https://www.instagram.com/titobychefyemss" target="_blank" rel="noopener" aria-label="Instagram">
+          <i class="fab fa-instagram" style="font-size: 24px; color: #FEDBB5;"></i>
+        </a>
+        <a href="https://www.tiktok.com/@titobychefyemss" target="_blank" rel="noopener" aria-label="TikTok">
+          <i class="fab fa-tiktok" style="font-size: 24px; color: #FEDBB5;"></i>
+        </a>
+        <!-- <a href="https://www.facebook.com/yourhandle" target="_blank" rel="noopener" aria-label="Facebook">
+          <i class="fab fa-facebook-f" style="font-size: 24px;"></i>
+        </a>
+        <a href="https://x.com/yourhandle" target="_blank" rel="noopener" aria-label="X (Twitter)">
+          <i class="fab fa-x-twitter" style="font-size: 24px;"></i>
+        </a> -->
+      </div>
+      <p>© <script>document.write(new Date().getFullYear()) </script> Titó by Chef Yemss. All rights reserved.</p>
+    </footer>
   </body>
 </html>
