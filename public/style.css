@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'Archivo';
-  src: url('./assets/fonts/Archivo/Archivo-VariableFont.ttf') format('truetype');
+  src: url('../assets/fonts/Archivo/Archivo-VariableFont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Playfair Display';
-  src: url('./assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont.ttf') format('truetype');
+  src: url('../assets/fonts/PlayfairDisplay/PlayfairDisplay-VariableFont.ttf') format('truetype');
 }
 @font-face {
   font-family: 'Playfair Display Italic';
-  src: url('./assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic-VariableFont.ttf') format('truetype');
+  src: url('../assets/fonts/PlayfairDisplay/PlayfairDisplay-Italic-VariableFont.ttf') format('truetype');
 }
 
 body, html {
@@ -58,7 +58,7 @@ body > div > div, h3, form {
 }
 
 .tito-coming-soon {
-  background: url('./assets/images/Tito_By_Chef_Yems_Logo.png') no-repeat center;
+  background: url('../assets/images/Tito_By_Chef_Yems_Logo.png') no-repeat center;
   background-size: contain;
   height: 147.8px;
   width: 314px;
