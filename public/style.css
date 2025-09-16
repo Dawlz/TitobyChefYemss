@@ -35,7 +35,7 @@ html, body {
 
 /* central wrapper */
 body > div {
-  min-height: 100vh;
+  min-height: 85%;
   width: 100%;
   max-width: var(--max-content-width);
   margin: 0 auto;
@@ -132,7 +132,8 @@ button:hover { filter: brightness(.98); }
 /* footer */
 footer {
   width: 100%;
-  margin-top: 28px;
+  height: 12%;
+  margin-top: 1%;
   color: var(--accent);
   font-family: 'Archivo', sans-serif;
   font-size: 14px;
