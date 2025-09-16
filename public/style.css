@@ -91,6 +91,13 @@ form {
   text-align: left;
 }
 
+::placeholder {
+  color: var(--accent);
+  font-family: 'Archivo', sans-serif;;
+  opacity: 0.5; /* Firefox */
+  font-size: 18px;
+}
+
 /* input + button row */
 .form-group {
   width: 100%;
