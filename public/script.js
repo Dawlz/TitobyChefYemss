@@ -20,7 +20,8 @@ async function handleSubmit(e) {
     }
     if (result.success) {
       alert(`Success: ${result.message}` )
-      document.getElementById('message').textContent = 'Thank you for signing up! We will notify you soon.';
+      document.getElementById('message').innerHTML = '<p class = "success-signup">Thank you for signing up! We will notify you soon.</p>';
+      document.getElementById('form-group').classList.add('hidden');
     }
   } 
   catch (error) {
