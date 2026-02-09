@@ -172,6 +172,9 @@ footer {
   .tito-coming-soon { 
     margin-bottom: 6px; 
   }
+  #announcement {
+    width: 318px;
+  }
 }
 
 @media (min-width: 1200px) {
